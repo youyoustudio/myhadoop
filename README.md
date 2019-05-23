@@ -1,2 +1,3 @@
 # myhadoop
 hadoop测试项目
+window开发时，需要将HADOOP_USER_NAME 配置进环境变量或者在java变量中存放
