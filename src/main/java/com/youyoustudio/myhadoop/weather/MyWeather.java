@@ -9,7 +9,7 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 public class MyWeather {
-    public static void main(String[] args) throws Exception{
+    /*public static void main(String[] args) throws Exception{
         //三大步 客户端，mapper，reduce
         Configuration configuration = new Configuration(true);
         Job job = Job.getInstance(configuration);
@@ -49,5 +49,5 @@ public class MyWeather {
         FileOutputFormat.setOutputPath(job,output);
         job.setNumReduceTasks(2);//设置reduce数量
         job.waitForCompletion(true);
-    }
+    }*/
 }
