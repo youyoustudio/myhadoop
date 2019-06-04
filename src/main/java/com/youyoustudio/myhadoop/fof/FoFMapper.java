@@ -21,7 +21,7 @@ public class FoFMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
             mKey.set(getFof(strs[0],strs[i]));
             mValue.set(0);
             context.write(mKey,mValue);
-            for(int j = i;j<strs.length;j++){
+            for(int j = i + 1;j<strs.length;j++){
                 mKey.set(getFof(strs[i],strs[j]));
                 mValue.set(1);
                 context.write(mKey,mValue);
