@@ -1,4 +1,4 @@
-package com.youyoustudio.myhadoop.weather;
+package com.zzlc.myhadoop.weather;
 
 import org.apache.commons.lang.StringUtils;
 import org.apache.hadoop.io.IntWritable;

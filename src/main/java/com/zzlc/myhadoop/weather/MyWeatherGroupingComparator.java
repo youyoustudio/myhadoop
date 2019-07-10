@@ -1,6 +1,5 @@
-package com.youyoustudio.myhadoop.weather;
+package com.zzlc.myhadoop.weather;
 
-import org.apache.hadoop.io.RawComparator;
 import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.io.WritableComparator;
 

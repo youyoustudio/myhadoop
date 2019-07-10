@@ -1,4 +1,4 @@
-package com.youyoustudio.myhadoop.hive;
+package com.zzlc.myhadoop.hive;
 
 import org.apache.hadoop.hive.ql.exec.UDF;
 import org.apache.hadoop.io.Text;

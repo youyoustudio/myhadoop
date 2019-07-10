@@ -1,4 +1,4 @@
-package com.youyoustudio.myhadoop.weather;
+package com.zzlc.myhadoop.weather;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;

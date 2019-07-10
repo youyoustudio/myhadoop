@@ -1,4 +1,4 @@
-package com.youyoustudio.myhadoop.hive;
+package com.zzlc.myhadoop.hive;
 
 public class HiveJDBCDemo {
     private static String driverName = "org.apache.hive.jdbc.HiveDriver";

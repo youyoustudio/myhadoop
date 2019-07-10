@@ -1,4 +1,4 @@
-package com.youyoustudio.myhadoop.fof;
+package com.zzlc.myhadoop.fof;
 
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;

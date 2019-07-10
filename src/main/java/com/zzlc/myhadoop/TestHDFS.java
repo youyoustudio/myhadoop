@@ -1,4 +1,4 @@
-package com.youyoustudio.myhadoop;
+package com.zzlc.myhadoop;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.*;
@@ -26,7 +26,7 @@ public class TestHDFS {
 
     @Test
     public void mkdir() throws IOException {
-        Path path = new Path("/ooxx");
+        Path path = new Path("/aabb");
         if (fileSystem.exists(path)) {
             fileSystem.delete(path, true);
         }
@@ -35,7 +35,7 @@ public class TestHDFS {
 
     @Test
     public void upload()throws IOException{
-        Path path = new Path("/ooxx/hello.txt");
+        Path path = new Path("/aabb/hello.txt");
         FSDataOutputStream fsDataOutputStream = fileSystem.create(path);
         InputStream inputStream =
                 new BufferedInputStream(new FileInputStream(new File("E:\\hello.txt")));
@@ -44,7 +44,7 @@ public class TestHDFS {
 
     @Test
     public void download() throws IOException{
-        Path path = new Path("/ooxx/hello.txt");
+        Path path = new Path("/aabb/hello.txt");
         FSDataInputStream fsDataInputStream = fileSystem.open(path);
         FileOutputStream fileOutputStream = new FileOutputStream(new File("E:\\aaa.txt"));
         IOUtils.copyBytes(fsDataInputStream,fileOutputStream,conf,true);
@@ -52,7 +52,7 @@ public class TestHDFS {
 
     @Test
     public void blocks() throws IOException{
-        Path path = new Path("/ooxx/hello.txt");
+        Path path = new Path("/aabb/hello.txt");
         FileStatus fileStatus = fileSystem.getFileStatus(path);
         BlockLocation[] fileBlockLocations = fileSystem.getFileBlockLocations(path, 0, fileStatus.getLen());
         for (BlockLocation fileBlockLocation : fileBlockLocations) {
